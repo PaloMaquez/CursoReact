@@ -1,4 +1,128 @@
-.App {
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html, body {
+  height: 100%;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+/*-----Variables-----*/
+:root{
+  --font-family-title:'Montserrat', sans-serif;
+  --font-family-subtitle: 'Lora', serif;
+  --font-family-text: 'Hind Madurai', sans-serif;
+  --sage-green1:#9CAF88;
+  --sage-green2:#A9BD93;
+  --complementary-color1:#E8DEFC;
+  --color-black: #23272a; 
+  --color-black2: #181818;
+  --color-black3: #191919;
+}
+
+/*-----ScrollBar-----*/
+
+::-webkit-scrollbar {
+  background: transparent;
+  width: 1.2em;
+  height: 0.5em;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 100vw;
+  margin-block: 0.5em;
+  margin-top: 1vh;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--sage-green2);
+  border: 0.25em solid white;
+  border-radius: 100vw;
+}
+
+/*-----NavBar-----*/
+.logo{
+    width: 120px;
+}
+.navbar{
+  font-family: var(--font-family-subtitle);
+  font-size: 20px;
+  color: var(--color-black3);
+  letter-spacing: 1px;
+  margin: 0.1vw;
+  z-index: 1;
+}
+
+.dropdown-item:hover{
+  color: var(--complementary-color1);
+}
+.navbar-collapse{
+  justify-content: flex-end;
+}
+.dropdown-menu :hover{
+  background-color:  var(--sage-green1);
+  }
+.nav-link{
+  margin-right: 2vw;
+}
+
+/*-----Cart-----*/
+
+.cart{
+  margin-right: 2vw;
+  cursor: pointer;
+}
+.cart:hover{
+  color: var(--sage-green1);
+}
+.cart-pic{
+  width: 30px;
+  align-items: center;
+  vertical-align:auto;
+  z-index: 1;
+}
+.cart span{
+  position:absolute;
+  top: 2.5rem;
+  right: 1.5rem;
+  border: 1px solid white;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  padding: 0rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-color: var(--complementary-color1);
+}
+
+/*-----Main Title-----*/
+
+.MainTitle{
+  font-family: var(--font-family-title);
+  font-size: 6em;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  margin-top: 5vh;
+}
+.Greeting{
+  display: flex;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  font-family: var(--font-family-subtitle);
+  font-size: 3em;
+  font-style: italic;
+}
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +159,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
