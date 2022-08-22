@@ -87,7 +87,7 @@ html, body {
 .cart span{
   position:absolute;
   top: 2.5rem;
-  right: 1.5rem;
+  right: 1.2vw;
   border: 1px solid white;
   width: 2rem;
   height: 2rem;
@@ -113,6 +113,9 @@ html, body {
   justify-content: center;
   margin-top: 5vh;
 }
+
+/*-----Greeting-----*/
+
 .Greeting{
   display: flex;
   align-items: center;
@@ -122,6 +125,11 @@ html, body {
   font-size: 3em;
   font-style: italic;
 }
+
+/*-----@MEDIA-----*/
+
+
+
 /* .App {
   text-align: center;
 }
